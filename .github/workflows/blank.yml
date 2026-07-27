@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Test Phase
         run: echo "running test cases"
-   deploy:
+  deploy:
      runs-on: ubuntu-latest
      steps:
        - name: Deploy the App
