@@ -1,10 +1,10 @@
-name: GitHub Action Demo
-on: push
+name: Env Demo
+on: workflow_dispatch
+env:
+  APP_ENV: "dev"
 jobs: 
-  action-demo:
+  env_demo:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout the code
-        uses: actions/checkout@v4
-      - name: Print index.html file
-        run: cat index.html
+      - name: Connecting to Env
+        run: echo "App is connecting to $APP_ENV"
