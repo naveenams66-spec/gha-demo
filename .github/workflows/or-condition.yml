@@ -1,0 +1,9 @@
+name: Or Condition Demo
+on: push
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run for naveenams66-spec or naveena
+        if: github.actor == 'naveenams66-spec' || github.actor == 'naveena'
+        run: echo "It is triggered either by naveenams66-spec or naveena"
