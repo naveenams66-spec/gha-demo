@@ -13,5 +13,7 @@ jobs:
         run: echo "${{ toJson(github) }}"
       - name: Print envrionment variables
         run: printenv
+      - name: Print environment variables
+        run: echo "$GITHUB_SHA"
       
   
