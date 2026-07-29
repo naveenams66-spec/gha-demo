@@ -10,9 +10,9 @@ on:
           - dev
           - test
           - prod
-     artifacts_tag:
-       description:  Choose the git tag to deploy
-       required: true
+       artifacts_tag:
+         description:  Choose the git tag to deploy
+         required: true
 jobs:
   inputs-demo:
     runs-on: ubuntu-latest
